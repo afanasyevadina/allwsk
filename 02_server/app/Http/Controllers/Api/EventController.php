@@ -12,7 +12,7 @@ class EventController extends Controller
     public function index()
     {
         return response()->json([
-            'events' => EventResource::collection(Event::orderBy('date')->get()),
+            'events' => EventResource::collection(Event::where('date', '>', '2019-09-01')->orderBy('date')->get()),
         ]);
     }
 }

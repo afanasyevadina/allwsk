@@ -33,7 +33,7 @@ class Ticket extends Model
     public function getDescriptionAttribute()
     {
         if (@$this->special_validity['type'] == 'date') {
-            return 'Available until ' . date('F d, Y', strtotime($this->special_validity['date'] ?? ''));
+            return 'Available until ' . date('F j, Y', strtotime($this->special_validity['date'] ?? ''));
         }
         if (@$this->special_validity['type'] == 'amount') {
             return @$this->special_validity['amount'] . ' tickets available';
@@ -44,7 +44,7 @@ class Ticket extends Model
     public function getAvailableAttribute()
     {
         if (@$this->special_validity['type'] == 'date') {
-            return now()->lessThan(Carbon::create($this->special_validity['date'] ?? ''));
+            return Carbon::create('2019-09-01')->lessThan(Carbon::create($this->special_validity['date'] ?? ''));
         }
         if (@$this->special_validity['type'] == 'amount') {
             return $this->registrations()->count() < @$this->special_validity['amount'];

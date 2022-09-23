@@ -52,6 +52,6 @@ class ReservationController extends Controller
             'reserved' => true,
             'reservation_token' => $reservation->token,
             'reserved_until' => Carbon::create($reservation->expires_at)->toIso8601ZuluString(),
-        ]);
+        ], 201);
     }
 }

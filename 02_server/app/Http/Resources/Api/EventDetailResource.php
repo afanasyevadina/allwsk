@@ -35,6 +35,8 @@ class EventDetailResource extends JsonResource
                                     'speaker' => $session->speaker,
                                     'start' => $session->start,
                                     'end' => $session->end,
+                                    'type' => $session->type,
+                                    'cost' => $session->cost,
                                 ];
                             }),
                         ];
@@ -45,7 +47,7 @@ class EventDetailResource extends JsonResource
                 return [
                     'id' => $ticket->id,
                     'name' => $ticket->name,
-                    'cost' => $ticket->cost,
+                    'cost' => round($ticket->cost),
                     'description' => $ticket->description,
                     'available' => $ticket->available,
                 ];

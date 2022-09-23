@@ -22,11 +22,11 @@ class ConcertResource extends JsonResource
                 'id' => $this->location->id,
                 'name' => $this->location->name,
             ],
-            'shows' => $this->shows()->orderByDesc('start')->get()->map(function($show) {
+            'shows' => $this->shows()->orderBy('start')->get()->map(function($show) {
                 return [
                     'id' => $show->id,
-                    'start' => Carbon::create($show->start)->toIso8601ZuluString(),
-                    'end' => Carbon::create($show->end)->toIso8601ZuluString(),
+                    'start' => Carbon::create($show->start)->subHours(7)->toIso8601ZuluString(),
+                    'end' => Carbon::create($show->end)->subHours(7)->toIso8601ZuluString(),
                 ];
             }),
         ];

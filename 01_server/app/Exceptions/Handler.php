@@ -40,15 +40,15 @@ class Handler extends ExceptionHandler
         });
     }
 
-//    public function invalidJson($request, ValidationException $exception)
-//    {
-//        return response()->json([
-//            'error' => 'Validation failed',
-//            'fields' => collect($exception->errors())->map(function ($error) {
-//                return $error[0];
-//            }),
-//        ], 422);
-//    }
+    public function invalidJson($request, ValidationException $exception)
+    {
+        return response()->json([
+            'error' => 'Validation failed',
+            'fields' => collect($exception->errors())->map(function ($error) {
+                return $error[0];
+            }),
+        ], 422);
+    }
 
     public function invalid($request, ValidationException $exception)
     {
