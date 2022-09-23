@@ -25,4 +25,5 @@ Route::prefix('v1')->group(function() {
     Route::post('concerts/{concertId}/shows/{showId}/reservation', [\App\Http\Controllers\Api\Concerts\Shows\ReservationController::class, 'store']);
     Route::post('concerts/{concertId}/shows/{showId}/booking', [\App\Http\Controllers\Api\Concerts\Shows\BookingController::class, 'store']);
     Route::post('tickets', [\App\Http\Controllers\Api\TicketController::class, 'show']);
+    Route::post('tickets/{ticketId}/cancel', [\App\Http\Controllers\Api\TicketController::class, 'destroy']);
 });

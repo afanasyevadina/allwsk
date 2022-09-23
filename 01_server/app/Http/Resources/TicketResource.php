@@ -19,7 +19,7 @@ class TicketResource extends JsonResource
             'id' => $this->id,
             'code' => $this->code,
             'name' => $this->booking->name,
-            'created_at' => Carbon::create($this->created_at)->toIso8601ZuluString(),
+            'created_at' => Carbon::create($this->created_at)->subHours(7)->toIso8601ZuluString(),
             'row' => [
                 'id' => $this->locationSeat?->locationSeatRow->id,
                 'name' => $this->locationSeat?->locationSeatRow->name,
@@ -27,8 +27,8 @@ class TicketResource extends JsonResource
             'seat' => $this->locationSeat?->number,
             'show' => [
                 'id' => $this->locationSeat?->locationSeatRow->show->id,
-                'start' => Carbon::create($this->locationSeat?->locationSeatRow->show->start)->toIso8601ZuluString(),
-                'end' => Carbon::create($this->locationSeat?->locationSeatRow->show->end)->toIso8601ZuluString(),
+                'start' => Carbon::create($this->locationSeat?->locationSeatRow->show->start)->subHours(7)->toIso8601ZuluString(),
+                'end' => Carbon::create($this->locationSeat?->locationSeatRow->show->end)->subHours(7)->toIso8601ZuluString(),
                 'concert' => [
                     'id' => $this->locationSeat?->locationSeatRow->show->concert->id,
                     'artist' => $this->locationSeat?->locationSeatRow->show->concert->artist,
