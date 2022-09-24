@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /comp01/01_spa
+RewriteRule ^/comp01/01_spa/index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /comp01/01_spa/index.html [L]
