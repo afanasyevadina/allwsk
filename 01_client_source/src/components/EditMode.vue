@@ -140,16 +140,18 @@ export default {
         this.deselect()
       }
     }
-    const editorElement = document.getElementById('editor')
-    if ( this.isWysiwygareaAvailable() ) {
-      !window.CKEDITOR.replace( 'editor', {
-        removePlugins: ['easyimage', 'cloudservices']
-      } );
-    } else {
-      editorElement.setAttribute( 'contenteditable', 'true' );
-      !window.CKEDITOR.inline( 'editor', {
-        removePlugins: ['easyimage', 'cloudservices']
-      } );
+    if (!window.CKEDITOR.instances.editor) {
+      const editorElement = document.getElementById('editor')
+      if ( this.isWysiwygareaAvailable() ) {
+        !window.CKEDITOR.replace( 'editor', {
+          removePlugins: ['easyimage', 'cloudservices']
+        } );
+      } else {
+        editorElement.setAttribute( 'contenteditable', 'true' );
+        !window.CKEDITOR.inline( 'editor', {
+          removePlugins: ['easyimage', 'cloudservices']
+        } );
+      }
     }
   }
 }
