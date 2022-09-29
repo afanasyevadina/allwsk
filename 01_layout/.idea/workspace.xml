@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81f2a262-7fb4-47f5-82cc-e1ff892916ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/images/kzn-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/images/kzn-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/images/kzn-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/images/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/news_section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/single.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_cms/wp-content/themes/Kazan_MuseumTour/template_selected.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_client_source/src/components/EditMode.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../01_client_source/src/components/EditMode.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2FQhpJVCbnvyDcAzefnKCOKjSgd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81f2a262-7fb4-47f5-82cc-e1ff892916ff" name="Changes" comment="" />
+      <created>1664430396849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664430396849</updated>
+      <workItem from="1664430398039" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
